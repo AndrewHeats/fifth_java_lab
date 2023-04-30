@@ -1,4 +1,5 @@
 package ua.lviv.iot.algo.part1.lab5;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,20 +11,22 @@ public class ReplaceUnderscoreTest {
     String text;
     int length;
     ReplaceUnderscore formatter;
+
     @Before
-    public void setUp(){
+    public void setUp() {
         text = "The quick-brown fox jumps over the lazy-dog.";
         length = 50;
         formatter = new ReplaceUnderscore();
     }
+
     @Test
-    public void testReplaceDashesWithNullText(){
-        assertNull(formatter.replaceDashes(null,0));
+    public void testReplaceDashesWithNullText() {
+        assertNull(formatter.replaceDashes(null, 0));
     }
 
     @Test
     public void testReplaceDashes() {
-        String actual = formatter.replaceDashes(text,length);
+        String actual = String.valueOf(formatter.replaceDashes(text, length));
         assertEquals(EXPECTED, actual);
     }
 
