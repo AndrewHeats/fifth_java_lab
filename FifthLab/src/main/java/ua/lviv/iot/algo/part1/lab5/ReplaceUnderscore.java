@@ -24,14 +24,6 @@ public class ReplaceUnderscore {
 
     }
 
-    public static void main(String[] args) {
-        ReplaceUnderscore replaceUnderscore = new ReplaceUnderscore();
-        Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);
-        System.out.println("Enter a sentence: ");
-        String text = scanner.nextLine();
-        replaceUnderscore.replaceDashes(text, text.length());
-        scanner.close();
-    }
 
 
 }
