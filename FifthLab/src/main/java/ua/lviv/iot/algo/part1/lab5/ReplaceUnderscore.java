@@ -1,10 +1,7 @@
 package ua.lviv.iot.algo.part1.lab5;
 
-import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 
 public class ReplaceUnderscore {
     public StringBuffer replaceDashes(String text, int lenght) {
@@ -20,10 +17,5 @@ public class ReplaceUnderscore {
         matcher.appendTail(result);
         System.out.println(result);
         return result;
-
-
     }
-
-
-
 }
